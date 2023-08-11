@@ -19,7 +19,7 @@ image_comparison(
     make_responsive=True,
     in_memory=True)
 
-st.markdown("### :arrow_forward::ab:글자 추출(OCR) - `easyocr`")
+st.markdown("### :ab:글자 추출(OCR) - `easyocr`")
 
 option = st.selectbox(
     '어떤 서비스를 원하시나요?',
