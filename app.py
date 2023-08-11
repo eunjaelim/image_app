@@ -11,8 +11,8 @@ st.subheader('[미니프로젝트] 이미지 배경제거 + 글자추출 웹서�
 st.markdown('### :sunglasses: Remove Background - `rembg`')
 st.markdown("#### sample result")
 image_comparison(
-    img1 = "https://raw.githubusercontent.com/jaygil8755/first_app/3ccd1f9edd28745c8c7f63f1c839f87d29d46ab8/src/animal-1.jpg",
-    img2 = "https://raw.githubusercontent.com/jaygil8755/first_app/3ccd1f9edd28745c8c7f63f1c839f87d29d46ab8/src/animal_rmbg.png",
+    img1 = "https://github.com/eunjaelim/image_app/blob/master/%EC%97%90%ED%8E%A0%ED%83%91.JPG",
+    img2 = "https://github.com/eunjaelim/image_app/commit/bf6cfe9713463cf4b78916d36c9b17291082ae5b",
     label1 = "원본 이미지",
     label2 = "배경제거 이미지",
     show_labels=True,
