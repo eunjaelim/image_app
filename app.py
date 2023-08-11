@@ -2,7 +2,7 @@ import streamlit as st
 from rembg import remove
 from PIL import Image
 from streamlit_image_comparison import image_comparison
-import easyocr as ocr  #OCR
+import easyocr as ocr  #OCR 
 import numpy as np
 
 # set page config
