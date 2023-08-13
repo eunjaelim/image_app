@@ -69,7 +69,7 @@ if option == '글자추출':
 
            #adding a download button to download csv file
 
-           @st.cache
+          
    
            def convert_df(df):
            
