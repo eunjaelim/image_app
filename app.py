@@ -62,7 +62,7 @@ if option == '글자추출':
             
             df = pd.DataFrame(result_text, columns=['Extracted Text'])
             st.dataframe(df)
-            edited_df = st.data_editor(df, num_rows="dynamic")
+            st.data_editor(df, num_rows="dynamic")
             
             
         #st.success("Here you go!")
