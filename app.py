@@ -86,8 +86,7 @@ hide_st_style = """
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             header {visibility: hidden;}
-            .main css-uf99v8 ea3mdgi5{background-color:'black';
-            }
+           
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
