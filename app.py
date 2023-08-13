@@ -56,7 +56,7 @@ if option == '글자추출':
             result = reader.readtext(np.array(input_image))
             result_text = [] #empty list for results
             for text in result:
-                result_text.append(text[1].join(" "))
+                result_text.append(text[1][1].join(" "))
     
             st.write(result_text)
         #st.success("Here you go!")
