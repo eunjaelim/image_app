@@ -74,7 +74,18 @@ if option == '글자추출':
     else:
         st.write("Upload an Image")
      
-st.download_button('Download CSV', df)
+csv = convert_df(df)
+st.download_button(
+    label="Download data as CSV",
+
+    data=csv,
+
+    file_name='sample_df.csv',
+
+    mime='text/csv',
+)
+
+
 st.caption("감사합니다. 궁금하신 사항은 imeunjae361@gmail.com으로 문의해주세요")
 
 # ---- HIDE STREAMLIT STYLE ----
