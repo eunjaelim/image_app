@@ -8,8 +8,8 @@ import pandas as pd
  
 # set page config
 st.set_page_config(page_title='My_First_App',layout="centered")
-st.subheader('###  AI기반 이미지 배경제거 + 글자추출 웹서비스')
-st.markdown('###  이미지 배경 제거')
+st.subheader('### AI기반 이미지 배경제거 + 글자추출 웹서비스')
+st.markdown('### 이미지 배경 제거')
 
 image_comparison(
     img1 = "에펠탑.JPG",
@@ -20,7 +20,7 @@ image_comparison(
     make_responsive=True,
     in_memory=True)
 
-st.markdown("### 이미지 속 글자 추출하기")
+st.markdown("### 사진 속 글자 추출하기")
 
 option = st.selectbox(
     '어떤 서비스를 원하시나요?',
