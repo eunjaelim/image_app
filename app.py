@@ -75,24 +75,6 @@ if option == '글자추출':
                  mime='text/csv',
                        )
 
-
-
-#  #CSV 다운로드 버튼 추가히기
-
-          
-# @st.cache   
-# def convert_df(df):
-#      return df.to_csv().encode('utf-8')
-
-# csv = convert_df(df)
-# st.download_button(
-#      label="Download data as CSV",
-#      data=csv,
-#      file_name='sample_df.csv',
-#      mime='text/csv',
-#            )
-
-
    
 
 
