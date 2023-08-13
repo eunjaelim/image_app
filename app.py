@@ -5,7 +5,7 @@ from streamlit_image_comparison import image_comparison
 import easyocr as ocr  #OCR 
 import numpy as np
 import pandas as pd
-
+ 
 # set page config
 st.set_page_config(page_title='My_First_App',layout="centered")
 st.subheader('[미니프로젝트] 이미지 배경제거 + 글자추출 웹서비스')
