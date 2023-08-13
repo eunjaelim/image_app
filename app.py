@@ -64,23 +64,33 @@ if option == '글자추출':
             edited_df = st.data_editor(df)
             # st.dataframe(df)
 
+            def convert_df(df):
+                 return df.to_csv().encode('utf-8')
+            @st.cache 
+            csv = convert_df(df)
+            st.download_button(
+                 label="Download data as CSV",
+                 data=csv,
+                 file_name='sample_df.csv',
+                 mime='text/csv',
+                       )
 
 
 
- #CSV 다운로드 버튼 추가히기
+#  #CSV 다운로드 버튼 추가히기
 
           
-@st.cache   
-def convert_df(df):
-     return df.to_csv().encode('utf-8')
+# @st.cache   
+# def convert_df(df):
+#      return df.to_csv().encode('utf-8')
 
-csv = convert_df(df)
-st.download_button(
-     label="Download data as CSV",
-     data=csv,
-     file_name='sample_df.csv',
-     mime='text/csv',
-           )
+# csv = convert_df(df)
+# st.download_button(
+#      label="Download data as CSV",
+#      data=csv,
+#      file_name='sample_df.csv',
+#      mime='text/csv',
+#            )
 
 
    
