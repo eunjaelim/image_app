@@ -64,6 +64,19 @@ if option == '글자추출':
             edited_df = st.data_editor(df)
             # st.dataframe(df)
 
+           csv = convert_df(df)
+
+           #adding a download button to download csv file
+     
+           st.download_button(
+               label="Download data as CSV",
+           
+               data=csv,
+           
+               file_name='sample_df.csv',
+           
+               mime='text/csv',
+           )
             
 
            
@@ -74,16 +87,6 @@ if option == '글자추출':
     else:
         st.write("Upload an Image")
      
-csv = convert_df(df)
-st.download_button(
-    label="Download data as CSV",
-
-    data=csv,
-
-    file_name='sample_df.csv',
-
-    mime='text/csv',
-)
 
 
 st.caption("감사합니다. 궁금하신 사항은 imeunjae361@gmail.com으로 문의해주세요")
