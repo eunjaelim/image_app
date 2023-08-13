@@ -63,6 +63,22 @@ if option == '글자추출':
             df = pd.DataFrame(result_text, columns=['Extracted Text'])
             edited_df = st.data_editor(df)
             # st.dataframe(df)
+
+            @st.experimental_memo
+            def convert_df(df):
+               return df.to_csv(index=False).encode('utf-8')
+            
+            
+               csv = convert_df(df)
+            
+               st.download_button(
+                    "Press to Download",
+                    csv,
+                    "file.csv",
+                    "text/csv",
+                    key='download-csv'
+                 )
+
            
             
             
@@ -71,20 +87,6 @@ if option == '글자추출':
     else:
         st.write("Upload an Image")
      
-@st.experimental_memo
-def convert_df(df):
-   return df.to_csv(index=False).encode('utf-8')
-
-
-   csv = convert_df(df)
-
-   st.download_button(
-        "Press to Download",
-        csv,
-        "file.csv",
-        "text/csv",
-        key='download-csv'
-     )
 
 st.caption("감사합니다. 궁금하신 사항은 imeunjae361@gmail.com으로 문의해주세요")
 
