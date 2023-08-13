@@ -62,12 +62,8 @@ if option == '글자추출':
             
             df = pd.DataFrame(result_text, columns=['Extracted Text'],use_container_width=True)
             st.dataframe(df)
-
-            edited_df = st.data_editor(df, num_rows="dynamic")
+            edited_df = st.data_editor(df)
             
-            st.data_editor(df, key="data_editor")
-            st.write("Here's the session state:")
-            st.write(st.session_state["data_editor"])
             
         #st.success("Here you go!")
         st.balloons()
