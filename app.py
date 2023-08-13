@@ -4,6 +4,7 @@ from PIL import Image
 from streamlit_image_comparison import image_comparison
 import easyocr as ocr  #OCR 
 import numpy as np
+import pandas as pd
 
 # set page config
 st.set_page_config(page_title='My_First_App',layout="centered")
