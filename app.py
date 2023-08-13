@@ -86,7 +86,8 @@ hide_st_style = """
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             header {visibility: hidden;}
-            .main{background-color:'black',color='white'}
+            .main{background-color:'black';
+            color='white';}
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
