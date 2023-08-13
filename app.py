@@ -8,8 +8,8 @@ import pandas as pd
  
 # set page config
 st.set_page_config(page_title='My_First_App',layout="centered")
-st.subheader('[미니프로젝트] 이미지 배경제거 + 글자추출 웹서비스')
-st.markdown('### :sunglasses: Remove Background - `rembg`')
+st.subheader('이미지 배경제거 + 글자추출 웹서비스')
+st.markdown('###  Remove Background - `rembg`')
 st.markdown("#### sample result")
 image_comparison(
     img1 = "에펠탑.JPG",
@@ -20,7 +20,7 @@ image_comparison(
     make_responsive=True,
     in_memory=True)
 
-st.markdown("### :ab:글자 추출(OCR) - `easyocr`")
+st.markdown("### 글자 추출(OCR) - `easyocr`")
 
 option = st.selectbox(
     '어떤 서비스를 원하시나요?',
