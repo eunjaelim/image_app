@@ -67,7 +67,7 @@ if option == '글자추출':
 
 
 
-           #adding a download button to download csv file
+ #CSV 다운로드 버튼 추가히기
 
           
 @st.cache   
@@ -83,21 +83,7 @@ st.download_button(
            )
 
 
-     
-            
-
-           
-            
-            
-        #st.success("Here you go!")
-        st.balloons()
-    else:
-        st.write("Upload an Image")
-     
-
-
-
-
+   
 
 
 st.caption("감사합니다. 궁금하신 사항은 imeunjae361@gmail.com으로 문의해주세요")
