@@ -64,7 +64,8 @@ if option == '글자추출':
             edited_df = st.data_editor(df)
             # st.dataframe(df)
 
-           
+
+
 
            #adding a download button to download csv file
 
@@ -87,6 +88,9 @@ if option == '글자추출':
            
                mime='text/csv',
            )
+
+
+     
             
 
            
@@ -97,6 +101,10 @@ if option == '글자추출':
     else:
         st.write("Upload an Image")
      
+
+
+
+
 
 
 st.caption("감사합니다. 궁금하신 사항은 imeunjae361@gmail.com으로 문의해주세요")
@@ -110,3 +118,4 @@ hide_st_style = """
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
+
