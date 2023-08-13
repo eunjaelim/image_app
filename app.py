@@ -43,7 +43,7 @@ if option == '글자추출':
     def load_model(): 
         reader = ocr.Reader(['ko', 'en'],model_storage_directory='.')
         return reader 
-    @st.cache 
+     
     def convert_df(df):
                  return df.to_csv().encode('utf-8')
             @st.cache 
