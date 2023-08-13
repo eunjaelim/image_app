@@ -8,7 +8,7 @@ import pandas as pd
  
 # set page config
 st.set_page_config(page_title='My_First_App',layout="centered")
-st.subheader('### AI기반 이미지 배경제거 + 글자추출 웹서비스')
+st.subheader('## AI기반 이미지 배경제거 + 글자추출 웹서비스')
 st.markdown('### 이미지 배경 제거')
 
 image_comparison(
