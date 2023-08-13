@@ -13,7 +13,7 @@ st.markdown('###  이미지 배경 제거')
 st.markdown("#### sample result")
 image_comparison(
     img1 = "에펠탑.JPG",
-    img2 = "에펠탑.JPG_rmbg.png",
+    img2 = "에펠탑.JPG_rmbg.png", 
     label1 = "원본 이미지",
     label2 = "배경제거 이미지",
     show_labels=True,
