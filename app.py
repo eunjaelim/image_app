@@ -44,9 +44,7 @@ if option == '글자추출':
         reader = ocr.Reader(['ko', 'en'],model_storage_directory='.')
         return reader 
      
-    
-    
-    reader = load_model() #load model
+        reader = load_model() #load model
     
     if image is not None:
     
