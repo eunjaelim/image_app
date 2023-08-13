@@ -45,7 +45,7 @@ if option == '글자추출':
         return reader 
      
     reader = load_model() #load model
-    
+    print(image)
     if image is not None:
     
         input_image = Image.open(image) #read image
