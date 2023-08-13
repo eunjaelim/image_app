@@ -44,16 +44,7 @@ if option == '글자추출':
         reader = ocr.Reader(['ko', 'en'],model_storage_directory='.')
         return reader 
      
-    def convert_df(df):
-                 return df.to_csv().encode('utf-8')
-            
-    csv = convert_df(df)
-    st.download_button(
-                 label="Download data as CSV",
-                 data=csv,
-                 file_name='sample_df.csv',
-                 mime='text/csv',
-                       ) 
+    
     
     reader = load_model() #load model
     
@@ -75,16 +66,16 @@ if option == '글자추출':
             edited_df = st.data_editor(df)
             # st.dataframe(df)
 
-            # def convert_df(df):
-            #      return df.to_csv().encode('utf-8')
-            # @st.cache 
-            # csv = convert_df(df)
-            # st.download_button(
-            #      label="Download data as CSV",
-            #      data=csv,
-            #      file_name='sample_df.csv',
-            #      mime='text/csv',
-            #            )
+            def convert_df(df):
+                 return df.to_csv().encode('utf-8')
+            
+            csv = convert_df(df)
+            st.download_button(
+                 label="Download data as CSV",
+                 data=csv,
+                 file_name='sample_df.csv',
+                 mime='text/csv',
+                       )
 
    
 
