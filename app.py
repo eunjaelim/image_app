@@ -55,10 +55,13 @@ if option == '글자추출':
             # result = reader.readtext(image, detail = 0)    
             result = reader.readtext(np.array(input_image))
             result_text = [] #empty list for results
-            for text in result:
+            for text in result: 
                 result_text.append(text[1])
     
             st.write(result_text)
+            df=pd.DataFrame([result_text])
+            st.dataframe(df)
+            
         #st.success("Here you go!")
         st.balloons()
     else:
