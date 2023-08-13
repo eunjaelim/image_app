@@ -69,7 +69,7 @@ if option == '글자추출':
             
             csv = convert_df(df)
             st.download_button(
-                 label="Download data as CSV",
+                 label="파일 저장",
                  data=csv,
                  file_name='sample_df.csv',
                  mime='text/csv',
