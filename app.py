@@ -59,8 +59,8 @@ if option == '글자추출':
             for text in result: 
                 result_text.append(text[1])
     
-            st.write(result_text)
-            df = pd.DataFrame(result_text, columns=['Extracted Text'])
+            
+            df = pd.DataFrame(result_text, columns=['Extracted Text'],use_container_width=True)
             st.dataframe(df)
             
         #st.success("Here you go!")
