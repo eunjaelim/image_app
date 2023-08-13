@@ -70,19 +70,15 @@ if option == '글자추출':
            #adding a download button to download csv file
 
           
-   
-           def convert_df(df):
-                return df.to_csv().encode('utf-8')
+@st.cache   
+def convert_df(df):
+     return df.to_csv().encode('utf-8')
 
-           csv = convert_df(df)
-        
-           st.download_button(
+csv = convert_df(df)
+        st.download_button(
                label="Download data as CSV",
-           
                data=csv,
-           
                file_name='sample_df.csv',
-           
                mime='text/csv',
            )
 
