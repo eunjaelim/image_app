@@ -20,7 +20,7 @@ image_comparison(
     make_responsive=True,
     in_memory=True)
 
-st.markdown("### 글자 추출(OCR) - `easyocr`")
+st.markdown("### 이미지 속 글자 추출하기")
 
 option = st.selectbox(
     '어떤 서비스를 원하시나요?',
