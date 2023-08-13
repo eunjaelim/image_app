@@ -64,7 +64,7 @@ if option == '글자추출':
     else:
         st.write("Upload an Image")
 
-st.caption("감사합니다. 궁금하신 사항은 jaygil8755@gmail.com으로 문의해주세요")
+st.caption("감사합니다. 궁금하신 사항은 imeunjae361@gmail.com으로 문의해주세요")
 
 # ---- HIDE STREAMLIT STYLE ----
 hide_st_style = """
