@@ -70,6 +70,21 @@ if option == '글자추출':
         st.balloons()
     else:
         st.write("Upload an Image")
+     
+@st.experimental_memo
+def convert_df(df):
+   return df.to_csv(index=False).encode('utf-8')
+
+
+   csv = convert_df(df)
+
+   st.download_button(
+        "Press to Download",
+        csv,
+        "file.csv",
+        "text/csv",
+        key='download-csv'
+     )
 
 st.caption("감사합니다. 궁금하신 사항은 imeunjae361@gmail.com으로 문의해주세요")
 
