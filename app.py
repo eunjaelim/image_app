@@ -60,10 +60,11 @@ if option == '글자추출':
                 result_text.append(text[1])
     
             
-            df = pd.DataFrame(result_text, columns=['Extracted Text'],use_container_width=True)
+            df = pd.DataFrame(result_text, columns=['Extracted Text'])
             st.dataframe(df)
-            df = load_data()
-            edited_df = st.data_editor(df)
+            edited_list = st.data_editor(['Extracted Text'], num_rows= "dynamic")
+            st.write("Here are all the colors you entered:")
+            st.write(edited_list)
             
             
         #st.success("Here you go!")
