@@ -60,7 +60,7 @@ if option == '글자추출':
                 result_text.append(text[1])
     
             st.write(result_text)
-            df=pd.DataFrame([result_text])
+            df=pd.DataFrame(result_text)
             st.dataframe(df)
             
         #st.success("Here you go!")
