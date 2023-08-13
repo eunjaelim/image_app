@@ -65,7 +65,7 @@ if option == '글자추출':
             df = pd.DataFrame(result_text, columns=['Extracted Text'])
             edited_df = st.data_editor(df)
             # st.dataframe(df)
-
+            @st.cache
             def convert_df(df):
                  return df.to_csv().encode('utf-8')
             
